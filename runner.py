@@ -3,13 +3,6 @@ import pygame, sys
 from pygame.locals import *
 
 
-def scene(display, x):
-    white=(255,255,255)
-    blue=(0,0,255)
-    display.fill(white)
-    pygame.draw.rect(display, blue, (x, 150,50,50))
-    return x+10
-
 def run(initial_world, scene_function):
     pygame.init()
     clock = pygame.time.Clock()

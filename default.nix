@@ -7,7 +7,7 @@ with import <nixpkgs> {};
 with pkgs.python27Packages;
 
 buildPythonPackage {
-  name = "ninja";
+  name = "Python hunter";
   buildInputs = [
     stdenv
     python27Full
