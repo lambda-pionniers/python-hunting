@@ -3,7 +3,17 @@ import pygame, sys
 from pygame.locals import *
 
 
-def run(initial_world, scene_function):
+def display(scene_function):
+    pygame.init()
+    clock = pygame.time.Clock()
+    display = pygame.display.set_mode((640, 400),0,32)
+    scene_function(display)
+    pygame.display.update()
+
+    while True:
+        clock.tick(40)
+
+def animate(initial_world, scene_function):
     pygame.init()
     clock = pygame.time.Clock()
     display = pygame.display.set_mode((640, 400),0,32)
