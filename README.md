@@ -11,4 +11,4 @@ Sous NixOS, lancer `nix-shell .`
 
 ## Lancement
 
-    $ python hello
+    $ python cabouge.py
